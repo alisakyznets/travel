@@ -1,0 +1,135 @@
+.body-top {
+    width: 80%;
+    border: none;
+    margin: auto;
+    font-family: Verdana;
+    font-style: normal;
+    font-size: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    padding: 1em;
+    color: white;
+    background-color: #007196;
+    display: flex;
+    align-items: center; /* Исправление: vertical-align заменено на align-items */
+}
+
+#logo {
+    max-width: 180px;
+    max-height: 140px;
+}
+
+.col-9 {
+    display: flex;
+}
+
+h1 {
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        max-width: 100px;
+        max-height: 70px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+}
+
+#menu {
+    background-color: #66CDAA;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    border: solid white;
+    box-shadow: 10px 0 10px -10px #000 inset, -10px 0 10px -10px #000 inset; /* Исправление: упрощение значения тени */
+}
+
+.tour {
+    border: solid #007196;
+    margin: auto;
+    height: 100%;
+        display: flex;
+}
+
+.tour img {
+    width: 250px;
+    height: 170px;
+    padding: 5px;
+}
+
+.tour a {
+    background-color: #66CDAA;
+    box-shadow: 10px 0 10px -10px #000 inset, -10px 0 10px -10px #000 inset; /* Исправление: упрощение значения тени */
+    color: white;
+}
+
+.tour p .tour img {
+    margin: 0 10px;
+}
+
+.btn {
+    margin-left: auto;
+    /* order: 999; (может потребоваться рассмотреть необходимость) */
+    background-color: #66CDAA;
+    box-shadow: 10px 0 10px -10px #000 inset, -10px 0 10px -10px #000 inset; /* Исправление: упрощение значения тени */
+    color: white;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: calc(100vh - 70px); /* Исправление: замена min-height: 100% */
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    color: white;
+    background-color: #007196;
+}
+
+table#tours {
+    width: 80%;
+    margin: auto;
+}
+
+table#tours td {
+    text-align: left;
+    border: 2px solid red;
+}
+nav {
+    height: 60px;
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(102, 205, 170);
+    border-width: initial;
+    border-style: solid;
+    border-color: rgb(51, 51, 51);
+    border-image: initial;
+    padding: 1em;
+}
+nav a {
+    margin-right: 10px;
+    color: white;
+    box-shadow: rgb(0, 0, 0) 20px 0px 20px -20px inset, rgb(0, 0, 0) -20px 0px 20px -20px inset;
+    text-decoration: none;
+    padding: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+}
